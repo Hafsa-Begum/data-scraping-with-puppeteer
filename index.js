@@ -1,4 +1,7 @@
 const express = require("express");
+require("dotenv").config({
+    path: ".env",
+});
 const { extractFromINaturalist } = require("./contollers/extractInfoFromINaturalist");
 
 const app = express();
